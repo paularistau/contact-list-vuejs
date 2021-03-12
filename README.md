@@ -19,8 +19,10 @@ npm run data
 
 ```
 <p>Now run the app: To run app with docker enter the following command in a terminal:</p>
-## Project run
+```
 docker-compose up web
+
+```
 
 <p>To run app without docker enter the following command in a terminal:</p>
 
