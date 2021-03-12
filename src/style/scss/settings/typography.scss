@@ -1,7 +1,7 @@
 
 $font-primary: 'Quicksand', sans-serif;
 $font-secondary: sans-serif !default;
-$font-size-title: 20px !default;
+$font-size-title: 32px !default;
 $font-size-20: 20px !default;
 $font-size-15: 15px !default;
 $font-size-13: 13px !default;
@@ -21,8 +21,8 @@ h1 {
     font-style: normal;
     font-weight: bold;
     font-size: $font-size-title;
-    line-height: 27px;
-    color: $white;
+    line-height: 20px;
+    color: $red;
 }
 
 h2 {
@@ -31,7 +31,6 @@ h2 {
     font-weight: bold;
     font-size: 13px;
     line-height: 18px;
-    color: $grey-dark;
     margin: 0 !important;
 }
 

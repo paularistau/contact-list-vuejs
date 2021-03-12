@@ -1,12 +1,11 @@
-FROM node:alpine
+FROM node:lts-alpine
+WORKDIR /app
+COPY package.json ./
+RUN  npm install
+EXPOSE 8080
+CMD ["npm", "run", "serve"]
 
-WORKDIR /usr/app
 
-COPY package*.json ./
-RUN npm install
-
-COPY . .
-
-EXPOSE 3000
-
-CMD ["npm", "start"]
+# docker-compose up # to start the compilation process
+# to install npm package run
+# docker-compose exec web npm i bootstrap
