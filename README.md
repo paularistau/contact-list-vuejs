@@ -1,7 +1,7 @@
 # contact-list-vuejs
 
 <h1 align="center">
-  <a name="logo"><img src="https://imgur.com/MHd5tT9.png" width="200"></a>
+  <a name="logo"><img src="https://imgur.com/MHd5tT9.png" width="100"></a>
   <br>
   Vue Contact List
 </h1>
