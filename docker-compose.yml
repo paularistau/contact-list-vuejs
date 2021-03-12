@@ -11,3 +11,10 @@ services:
         volumes:
             - "/app/node_modules" 
             - ".:/app"
+
+    db:
+        build: .
+        command: npm run data
+        ports: 
+            - "3000:3000"
+

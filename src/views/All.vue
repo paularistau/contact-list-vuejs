@@ -5,16 +5,23 @@
       <tr class="x-all-contacts__table-title">
         <th>Nome</th>
         <th>CPF</th>
-        <th>e-mail</th>
         <th>telefone</th>
+        <th>e-mail</th>
         <th></th>
       </tr>
-      <tr class="x-all-contacts__table-item" v-for="contact in contacts" :key="contact.id">
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td>50</td>
-        <td class="x-all-contacts__table-item-delete">
+      <tr
+        class="x-all-contacts__table-item"
+        v-for="(contact, index) in contacts"
+        :key="index"
+      >
+        <td>{{ contact.name }}</td>
+        <td>{{ contact.cpf }}</td>
+        <td>{{ contact.phone }}</td>
+        <td>{{ contact.email }}</td>
+        <td
+          class="x-all-contacts__table-item-delete"
+          @click="deleteContact(contact.id)"
+        >
           <svg
             width="24"
             height="24"
@@ -35,7 +42,8 @@
 
 
 <script>
-import axios from "axios";
+import { api } from "@/services.js";
+
 export default {
   name: "All",
   components: {},
@@ -51,11 +59,25 @@ export default {
 
   methods: {
     getContacts() {
-      axios.get("http://localhost:84/contacts").then(response => {
+      api.get("/contacts").then((response) => {
         this.contacts = response.data;
       });
     },
-	},
+    deleteContact(id) {
+      const confirm = window.confirm("Deseja remover este contato?");
+      if(confirm){
+        console.log("ID=>", id)
+        api
+          .delete(`/contacts/${id}`)
+          .then(() => {
+            this.getContacts();
+          })
+          .catch(error => {
+            console.log(error.reponse);
+          });
+      }
+    },
+  },
 };
 </script>
 
@@ -67,10 +89,11 @@ export default {
   justify-content: flex-start;
   padding: 5%;
   text-align: left;
+  overflow-x: auto;
 
   &__table {
-    border-spacing:0;
-    border-collapse: collapse;
+    border-spacing: 0 12px;
+    border-collapse: separate;
     &-title {
       font-family: $font-primary;
       font-style: normal;
@@ -79,19 +102,21 @@ export default {
       line-height: 20px;
       color: #828282;
 
-      th{
+      th {
         padding: 12px;
       }
     }
-    &-item{
-      background-color: #F2F2F2;
+    &-item {
+      background-color: #f2f2f2;
       height: 70px;
 
-      td{
+      td {
         padding: 12px;
+        background-color: #f2f2f2;
+
       }
 
-      &-delete{
+      &-delete {
         text-align: right;
         margin-right: 18px;
         cursor: pointer;
