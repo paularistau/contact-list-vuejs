@@ -1,7 +1,7 @@
 # contact-list-vuejs
 
 <h1 align="center">
-  <a name="logo"><img src="@/assets/logo.png" alt="Vue Contact List" width="200"></a>
+  <a name="logo"><img src="@/assets/logo.png" width="200"></a>
   <br>
   Vue Contact List
 </h1>
@@ -15,15 +15,14 @@ This Repo is designed for create a simple Contact List app, with the functionali
 <p>First run the API</p>
 
 ```
+npm run data
 
 ```
-npm run data
 <p>Now run the app: To run app with docker enter the following command in a terminal:</p>
 ## Project run
 docker-compose up web
 
 <p>To run app without docker enter the following command in a terminal:</p>
-## Project run
 
 ```
 $npm i
