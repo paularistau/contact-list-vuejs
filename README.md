@@ -1,7 +1,7 @@
 # contact-list-vuejs
 
 <h1 align="center">
-  <a name="logo"><img src="https://imgur.com/MHd5tT9" width="200"></a>
+  <a name="logo"><img src="https://imgur.com/MHd5tT9.png" width="200"></a>
   <br>
   Vue Contact List
 </h1>
@@ -29,6 +29,7 @@ $npm i
 $npm run serve
 ```
 ![Screenshot of Home - List All Contacts](https://imgur.com/x5Bg4Pm.png)
+Screenshot of Home - List All Contacts
 ![Screenshot of Add New Contact - List All Contacts](https://imgur.com/tl79tfU.png)
 Screenshot of Add New Contact - List All Contacts
 
