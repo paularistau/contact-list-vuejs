@@ -29,9 +29,9 @@ $npm i
 $npm run serve
 ```
 
-![Screenshot of Home - List All Contacts]
+Screenshot of Home - List All Contacts
 <img src="https://imgur.com/x5Bg4Pm"/>
-![Screenshot of Add New Contact - List All Contacts]
+Screenshot of Add New Contact - List All Contacts
 <img src="https://imgur.com/tl79tfU"/>
 
 You can check the prototype layout <a href="https://www.figma.com/file/sc8sN7Qnpup2QjYSkgrzfd/Untitled?node-id=2%3A8">here!</a>
