@@ -10,7 +10,7 @@
       :type="type"
       v-on:input="$emit('input', $event.target.value)"
       :placeholder="placeholder"
-      :v-mask="mask"
+      v-mask="mask"
     />
   </div>
 </template>
@@ -43,7 +43,7 @@ export default {
       type: [String],
     },    
     mask: {
-      type: [String],
+      type: [String, Number],
     },  
     placeholder: {
       type: [String],
@@ -84,7 +84,6 @@ export default {
     font-size: 14px;
     font-weight: bold;
     color: #444444;
-    text-transform: capitalize;
     line-height: 20px;
   }
   &__style {

@@ -5,8 +5,8 @@
       <tr class="x-all-contacts__table-title">
         <th>Nome</th>
         <th>CPF</th>
-        <th>telefone</th>
-        <th>e-mail</th>
+        <th>Telefone</th>
+        <th>e-Mail</th>
         <th></th>
       </tr>
       <tr

@@ -43,7 +43,7 @@
               name="email"
               type="text"
               :v-model="contact.email"
-              label="E-mail"
+              label="e-Mail"
               widthSize="272"
               placeholder="Digite seu e-mail"
               @input="updateEmail"
