@@ -11,6 +11,7 @@
           widthSize="346"
           label="Nome"
           placeholder="Digite seu nome"
+          @input="updateName"
         ></Input>
         <Input
           id="cpf"
@@ -20,6 +21,7 @@
           mask="###.###.###-##"
           label="CPF"
           placeholder="Digite seu CPF"
+          @input="updateCpf"
         ></Input>
         <div class="x-add-new__form-content__input-group">
           <div class="x-add-new__form-content__input-group--item">
@@ -32,6 +34,7 @@
               label="Telefone"
               widthSize="346"
               placeholder="Digite seu telefone"
+              @input="updatePhone"
             ></Input>
           </div>
           <div class="x-add-new__form-content__input-group--item">
@@ -43,11 +46,12 @@
               label="E-mail"
               widthSize="272"
               placeholder="Digite seu e-mail"
+              @input="updateEmail"
             />
           </div>
         </div>
         <div class="x-add-new__add-btn" @click="addNewContact()">
-          <Button theme="secundary" >Adicionar</Button>
+          <Button theme="secundary">Adicionar</Button>
         </div>
       </form>
     </div>
@@ -64,7 +68,7 @@ export default {
   name: "AddNew",
   components: {
     Input,
-    Button
+    Button,
   },
   data() {
     return {
@@ -78,14 +82,26 @@ export default {
   },
   methods: {
     addNewContact() {
-        api
-          .post(`/contacts/`, this.contact)
-          .then(() => {
-            this.$router.push('/');
-          })
-          .catch(error => {
-            console.log(error.reponse);
-          });
+      api
+        .post(`/contacts/`, this.contact)
+        .then(() => {
+          this.$router.push("/");
+        })
+        .catch((error) => {
+          console.log(error.reponse);
+        });
+    },
+    updateName(e) {
+      this.contact.name = e;
+    },
+    updateCpf(e) {
+      this.contact.cpf = e;
+    },
+    updatePhone(e) {
+      this.contact.phone = e;
+    },
+    updateEmail(e) {
+      this.contact.email = e;
     },
   },
 };
@@ -148,7 +164,7 @@ export default {
     }
   }
 
-  &__add-btn{
+  &__add-btn {
     position: relative;
     justify-content: flex-end;
     display: flex;

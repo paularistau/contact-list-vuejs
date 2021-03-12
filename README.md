@@ -36,7 +36,7 @@ Screenshot of Home - List All Contacts
 ![Screenshot of Add New Contact - List All Contacts](https://imgur.com/tl79tfU.png)
 Screenshot of Add New Contact - List All Contacts
 
-You can check Figma prototype layout <a href="https://www.figma.com/file/sc8sN7Qnpup2QjYSkgrzfd/Untitled?node-id=2%3A8">here!</a>
+You can check Figma prototype layout <a href="https://www.figma.com/file/sc8sN7Qnpup2QjYSkgrzfd/Vue-list?node-id=2%3A8">here!</a>
 
 <hr>
 

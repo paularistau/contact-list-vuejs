@@ -8,7 +8,7 @@
       :id="id"
       :name="name"
       :type="type"
-      :v-model="model"
+      v-on:input="$emit('input', $event.target.value)"
       :placeholder="placeholder"
       :v-mask="mask"
     />
