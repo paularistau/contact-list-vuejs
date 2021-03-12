@@ -1,7 +1,7 @@
 # contact-list-vuejs
 
 <h1 align="center">
-  <a name="logo"><img src="@/assets/logo.png" width="200"></a>
+  <a name="logo"><img src="https://imgur.com/MHd5tT9" width="200"></a>
   <br>
   Vue Contact List
 </h1>
@@ -30,9 +30,9 @@ $npm run serve
 ```
 
 ![Screenshot of Home - List All Contacts]
-<img src="@/assets/list-all.png"/>
-![Screenshot of Add New Contact - List All Contacts](@/assets/add-new.png)
-<img src="@/assets/add-new.png"/>
+<img src="https://imgur.com/x5Bg4Pm"/>
+![Screenshot of Add New Contact - List All Contacts]
+<img src="https://imgur.com/tl79tfU"/>
 
 You can check the prototype layout <a href="https://www.figma.com/file/sc8sN7Qnpup2QjYSkgrzfd/Untitled?node-id=2%3A8">here!</a>
 
