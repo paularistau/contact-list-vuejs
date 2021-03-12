@@ -28,13 +28,11 @@ docker-compose up web
 $npm i
 $npm run serve
 ```
-
-Screenshot of Home - List All Contacts
-<img src="https://imgur.com/x5Bg4Pm"/>
+![Screenshot of Home - List All Contacts](https://imgur.com/x5Bg4Pm.png)
+![Screenshot of Add New Contact - List All Contacts](https://imgur.com/tl79tfU.png)
 Screenshot of Add New Contact - List All Contacts
-<img src="https://imgur.com/tl79tfU"/>
 
-You can check the prototype layout <a href="https://www.figma.com/file/sc8sN7Qnpup2QjYSkgrzfd/Untitled?node-id=2%3A8">here!</a>
+You can check Figma prototype layout <a href="https://www.figma.com/file/sc8sN7Qnpup2QjYSkgrzfd/Untitled?node-id=2%3A8">here!</a>
 
 <hr>
 
